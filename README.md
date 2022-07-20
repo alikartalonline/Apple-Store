@@ -2,7 +2,8 @@
 
 ## I will work slowly 😋☕
 
-!["loading"](https://github.com/alikartalonline/Apple-Store/blob/main/assets/loading.gif)
+<img src="https://github.com/alikartalonline/Apple-Store/blob/main/assets/loading.gif" width="450" height="300" alt="Loading...">
+
 
 <br>
 <hr>
