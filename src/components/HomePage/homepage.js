@@ -28,7 +28,7 @@ function HomePage() {
 
                 </div>
 
-                <div className='col-12'>
+                <div className='col-12 watchmain' >
                     <div className='WATCH'>
                     </div>
                     <h1 className='watch-text'>Özgürlük çağrısı.</h1>

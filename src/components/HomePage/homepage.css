@@ -1,4 +1,5 @@
 body {
+    /* background-color: orange; */
     background-color: #fffcfc;
 }
 
@@ -106,16 +107,34 @@ letter-spacing: .03em;
 
 }
 
+.watchmain{
+max-width: 100%;
+}
 
 .watch-image{
     background-image: url(https://www.apple.com/tr/home/images/heroes/watch-series-7/hero__dvsxv8smkkgi_largetall_2x.jpg);
     background-repeat: no-repeat;
+    position: absolute;
+    transform: translatey(-30%);
+    width: 100%;
+    height: 736px;
+    background-size: 150% 736px;
+    background-repeat: no-repeat;
+    left: calc(0%);
+    z-index: -1;
+    background-position: center; 
+}
+
+/* .watch-image{
+    background-image: url(https://www.apple.com/tr/home/images/heroes/watch-series-7/hero__dvsxv8smkkgi_largetall_2x.jpg);
+    background-repeat: no-repeat;
     position: relative;
     transform: translatey(-30%);
-    width: 140%;
+    width: 150%;
     height: 736px;
     background-size: 3000px 736px;
     background-repeat: no-repeat;
     left: calc(-65%);
     z-index: -1;
-}
+    mask-size: 30%;
+} */
