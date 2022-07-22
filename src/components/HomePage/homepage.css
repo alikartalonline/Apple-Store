@@ -1,154 +1,70 @@
-.logo-m2{
-    background-image: url(https://www.apple.com/tr/home/images/logos/macbook-air/logo_hero_macbookair__edl9uovq56wm_largetall_2x.png);
-    background-repeat: no-repeat;
+body {
+    background-color: #fffcfc;
 }
 
 
-
-.mair{
-    background-image: url(https://www.apple.com/v/home/ap/images/heroes/macbook-air/hero_macbookair__el7scava26mq_mediumtall_2x.png);
+.mair-image {
+    background-image: url(https://i.hizliresim.com/cr2mw2a.png);
     background-repeat: no-repeat;
-    /* height: auto; */
-    /* width: auto; */
-    width: 3008px;
-    height: 736px;
-    background-size: 1500px 900px;
-    z-index: 1;
-    position: absolute;
-}
-
-
-.pos{
+    width: 100%;
+    height: 750px;
+    background-size: 110% 105%;
+    /* margin-top: -400px; */
+    /* left: calc(0% + 0px); */
+    transform: translatex(-10%);
     position: relative;
 }
 
-.module-content{
-    height: 692px;
-    color: #1d1d1f;;
-    background-color: #fbfbfd;
-    /* display: block; */
-}
-
-
-.unit-link{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-
-a:link, a:visited, .link:link, .link:visited {
+a:link,
+a:visited,
+.link:link,
+.link:visited {
     text-decoration: none;
 }
 
-
-
-.unit-copy-wrapper{
-    margin-top: 0;
-    right: 265px;
-    padding-top: 220px;
-    text-align: center;
-    flex-grow: 0;
-    z-index: 4;
-    pointer-events: none;
-    position: relative;
-    -webkit-box-flex: 0;
-    -webkit-box-direction: normal;
-    color: #1d1d1f;
+.posmac {
+    margin-top: 200px;
+    margin-left: 200px;
+    position: absolute;
 }
 
-.headline{
-    margin-top: 7px;
+.headline {
+    margin-top: 10%;
+    top: 300px;
     font-size: 56px;
     line-height: 1.07143;
+    text-align: center;
     font-weight: 600;
     letter-spacing: -.005em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    color: #1d1d1f;
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    flex-shrink: 1;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     pointer-events: none;
 }
 
-.logo-image{
-    margin: 0 auto;
-}
 
-.logo-image-macbook-air-logo-hero-macbookair{
+.logo-image-macbook-air-logo-hero-macbookair {
     background-image: url(https://www.apple.com/tr/home/images/logos/macbook-air/logo_hero_macbookair__edl9uovq56wm_largetall_2x.png);
     height: 41px;
     background-size: 194px 41px;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.subhead{
     margin-top: 10px;
-    font-size: 28px;
-    line-height: 1.10722;
-    font-weight: 400;
-    letter-spacing: .004em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    color: #1d1d1f;
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    flex-shrink: 1;
 }
 
 
-.visuallyhidden{
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(0px 0px 99.9% 99.9%);
-    overflow: hidden;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    border: 0;
-}
 
-
-.cta-links{
-    position: relative;
+.cta-links {
+    /* position: relative; */
     z-index: 4;
     text-decoration: none;
     display: inline-block;
+    text-align: center;
+    width: 100%;
     font-size: 21px;
     line-height: 1.381;
     font-weight: 400;
     letter-spacing: .011em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     margin-top: 0.65em;
-}
-
-
-
-
-.unit-copy-wrapper>*.cta-links a:not(:only-child):first-child {
-    margin-left: -4px;
-}
-
-.unit-wrapper a:not(.unit-link) {
-    z-index: 4;
-    text-decoration: none;
-}
-
- .unit-copy-wrapper>*.cta, .main [data-module-template="heroes"] [data-unit-id] .unit-copy-wrapper>*.cta-links {
-    display: inline-block;
-    font-size: 21px;
-    line-height: 1.381;
-    font-weight: 400;
 }
 
 .cta-links .icon::after {
@@ -156,93 +72,50 @@ a:link, a:visited, .link:link, .link:visited {
 }
 
 
-.cta-links a:hover{
+.cta-links a:hover {
     color: rgb(8, 120, 232);
     text-decoration: underline;
 }
 
 
-.icon-after::after, .more::after {
-    padding-left: 0.3em;
-    top: 0;
-}
 
-.icon::before, .icon::after, .more::before, .more::after {
-    text-decoration: none;
-}
-
-.icon::before, .icon::after, .more::before, .more::after {
-    font-family: "SF Pro Icons";
-    color: inherit;
-    display: inline-block;
-    font-style: normal;
-    font-weight: inherit;
-    font-size: inherit;
-    text-decoration: underline;
-    position: relative;
-    z-index: 1;
-}
-
-.unit-copy-wrapper>*.cta-links a:not(:only-child):not(:first-child) {
-    margin-left: 35px;
-}
-
-.unit-wrapper .unit-copy-wrapper a {
-    pointer-events: all;
-}
-
-
-.cta-links .icon::after {
-    line-height: inherit;
-}
-
-.icon-chevronright::after {
-    /* content: ""; */
-    /* background-url: url(https://i.hizliresim.com/t2bcvmu.png); */
-    
-}
-
-.icon-after::after, .more::after {
-    padding-left: 0.3em;
-    top: 0;
-}
-
-.icon::before, .icon::after, .more::before, .more::after {
-    text-decoration: none;
-}
-
-.unit-image-wrapper{
-    z-index: 1;
-    overflow: visible;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-}
-
-
-.unit-image{
-    bottom: 350px;
-    z-index: 1;
-    position: relative;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    left: calc(50% + 0px);
-    right: auto;
-    top: auto;
-    transform: translatex(-50%);
-    background-image: url(https://www.apple.com/v/home/ap/images/heroes/macbook-air/hero_macbookair__el7scava26mq_largetall_2x.png); 
-    width: 3008px;
-    height: 736px;
-    background-size: 3008px 736px;
+.WATCH {
+    height: 72px;
+    background-size: 188px 72px;
     background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ap/images/logos/watch-series-7/hero_logo_watch_lte__fy5faj6xg7m2_largetall_2x.png);
+    background-position: center;
+
+}
+
+.watch-text {
+    text-align: center;
+font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 15px;
+    color: #1d1d1f;
+}
+
+.watch-text-p{
+text-align: center;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+letter-spacing: .03em;
+
 }
 
 
-
-    
+.watch-image{
+    background-image: url(https://www.apple.com/tr/home/images/heroes/watch-series-7/hero__dvsxv8smkkgi_largetall_2x.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    transform: translatey(-30%);
+    width: 140%;
+    height: 736px;
+    background-size: 3000px 736px;
+    background-repeat: no-repeat;
+    left: calc(-65%);
+    z-index: -1;
+}
