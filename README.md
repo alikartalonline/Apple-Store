@@ -9,8 +9,12 @@
 <hr>
 <br>
 
-## Chapter - 1:
+## Working...:
 
 <br>
 
-![week2](https://github.com/alikartalonline/Apple-Store/blob/main/assets/chapter1.png)
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/chapter1.png)
+
+<br>
+
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working1.gif)
