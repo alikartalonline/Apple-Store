@@ -1,20 +1,17 @@
 body {
-    /* background-color: orange; */
     background-color: #fffcfc;
 }
 
-
 .mair-image {
-    background-image: url(https://i.hizliresim.com/cr2mw2a.png);
+    z-index: -1;
+    background-image: url(https://www.apple.com/v/home/aq/images/heroes/macbook-air/hero_macbookair__el7scava26mq_largetall_2x.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: 750px;
-    background-size: 110% 105%;
-    /* margin-top: -400px; */
-    /* left: calc(0% + 0px); */
-    transform: translatex(-10%);
-    position: relative;
+    height: 736px;
+    background-size: 3008px 736px;
 }
+
 
 a:link,
 a:visited,
@@ -23,22 +20,22 @@ a:visited,
     text-decoration: none;
 }
 
-.posmac {
-    margin-top: 200px;
-    margin-left: 200px;
-    position: absolute;
-}
 
-.headline {
-    margin-top: 10%;
-    top: 300px;
+.headlinemair {
     font-size: 56px;
     line-height: 1.07143;
     text-align: center;
+    align-items: center;
     font-weight: 600;
     letter-spacing: -.005em;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     pointer-events: none;
+}
+
+.posmac{
+    padding-top: 15%;
+    padding-right: 5%;
+    margin-right: 20%;
 }
 
 
@@ -52,9 +49,7 @@ a:visited,
 }
 
 
-
 .cta-links {
-    /* position: relative; */
     z-index: 4;
     text-decoration: none;
     display: inline-block;
@@ -77,8 +72,6 @@ a:visited,
     color: rgb(8, 120, 232);
     text-decoration: underline;
 }
-
-
 
 .WATCH {
     height: 72px;
@@ -112,31 +105,15 @@ letter-spacing: .03em;
     background-image: url(https://www.apple.com/tr/home/images/heroes/watch-series-7/hero__dvsxv8smkkgi_largetall_2x.jpg);
     background-repeat: no-repeat;
     position: relative;
-    transform: translatey(-30%);
     width: 100%;
     height: 736px;
-    background-size: 250% 736px;
+    background-size: 200% 736px;
     background-repeat: no-repeat;
-    left: calc(0%);
-    z-index: -1;
     background-position: center; 
+    /* z-index: -1; */
+    /* left: calc(0%); */
+    /* transform: translatey(-30%); */
 }
-
-/* .watch-image{
-    background-image: url(https://www.apple.com/tr/home/images/heroes/watch-series-7/hero__dvsxv8smkkgi_largetall_2x.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    transform: translatey(-30%);
-    width: 150%;
-    height: 736px;
-    background-size: 3000px 736px;
-    background-repeat: no-repeat;
-    left: calc(-65%);
-    z-index: -1;
-    mask-size: 30%;
-} */
-
-
 
 .section3{
     color: #ca2166;
@@ -168,15 +145,88 @@ letter-spacing: .03em;
 }
 
 .uni-image{
+    margin-top: 5%;
     background-image: url(https://www.apple.com/tr/home/images/heroes/back-to-school-2022/hero_bts_alt__cbvhgv9ay03m_largetall_2x.jpg);
     background-repeat: no-repeat;
-    position: absolute;
-    transform: translatey(-30%);
+    position: relative;
     width: 100%;
-    height: 736px;
-    background-size: 150% 736px;
+    height: 750px;
+    background-size: 150% 750px;
     background-repeat: no-repeat;
-    left: calc(0%);
-    z-index: -1;
     background-position: center;
+    /* z-index: -1; */
+    /* left: calc(0%); */
+    /* transform: translatey(-30%); */
+}
+
+.headlinesection4{
+    padding-top: 40px;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #f5f5f7;
+    text-align: center;
+
+}
+
+.mbpro{
+    background-color: black;
+}
+
+.section4subhead{
+    background-image: url(https://www.apple.com/tr/home/images/logos/macbook-pro-13/logo_promo_mbp13__gnmug5nsag66_large_2x.png);
+    height: 51px;
+    background-size: 172px 51px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.mbpro-image{
+    background-image: url(https://www.apple.com/v/home/aq/images/promos/macbook-pro-13/promo_mbp13__buwssod6c8vm_large_2x.jpg);
+
+    width: 100%;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section4pos{
+    border: 0;
+    margin: 0;
+    padding: 10px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.ip13-image{
+    background-image: url(https://www.apple.com/v/home/aq/images/promos/iphone-13/promo_iphone13_avail__frc36u35m0ii_large_2x.jpg);
+
+    width: 100%;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.headlinei13{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 53px;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.subheadi13{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-align: center;
 }

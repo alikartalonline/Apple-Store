@@ -5,13 +5,15 @@ function HomePage() {
 
 
     return (
-        <section className='container'>
-            <div className='row '>
+        <section className=''>
 
 
-                <div className="col-12  ">
+            <div className="mt-5 ">
+                <figure className="mair-image">
+
                     <div className='posmac'>
-                        <h2 className="headline ">MacBook Air</h2>
+
+                        <h2 className="headlinemair ">MacBook Air</h2>
 
                         <h3 className="logo-image logo-image-macbook-air-logo-hero-macbookair " role="text"></h3>
 
@@ -23,12 +25,13 @@ function HomePage() {
                         </div>
                     </div>
 
-                    <figure className="mair-image">
-                    </figure>
+                </figure>
 
-                </div>
+            </div>
 
-                <div className='col-12' >
+            <div className='' >
+                <figure className="watch-image">
+
                     <div className='WATCH'>
                     </div>
                     <h1 className='watch-text'>Özgürlük çağrısı.</h1>
@@ -38,15 +41,15 @@ function HomePage() {
 
                         <a className="" href="">Satın alın</a><img src="https://i.hizliresim.com/t2bcvmu.png" alt="" />
                     </div>
-                    <figure className="watch-image">
-                    </figure>
-                </div>
+                </figure>
+            </div>
 
 
-                <div className='col-12 '>
+            <div className=''>
+                <figure className="uni-image">
 
                     <h2
-                        className="headlineuni" >
+                        className="headlineuni pt-5" >
                         Üniversitede
                         {" "}
                         <span className='section3'>süper güçleriniz</span>
@@ -62,13 +65,58 @@ function HomePage() {
                         <a className="me-4" href="" >Alışveriş yapın<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
                     </div>
 
-                    <figure className="uni-image">
-                    </figure>
+                </figure>
 
+            </div>
+
+
+            <div className='d-flex section4pos'>
+
+                <div className='col-6 mbpro'>
+                    <figure className='mbpro-image'>
+                        <h4 class="headlinesection4" >13 inç MacBook Pro</h4>
+                        <h5
+                            class="section4subhead"
+                        >
+                        </h5>
+                        <div className="cta-links">
+                        <a className="me-4" 
+                        style={{fontSize:'1rem'}}
+                        href="" >Daha fazla bilgi<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
+
+                        <a 
+                        style={{fontSize:'1rem'}} 
+                        href="">Satın alın</a><img src="https://i.hizliresim.com/t2bcvmu.png" alt="" />
+                    </div>
+                    </figure>
                 </div>
 
 
+
+                <div className='col-6'>
+                    <figure className='ip13-image'>
+                    <h1 className='headlinei13'>iPhone 13</h1>
+                    <h3 class="subheadi13">Süper bir güç.</h3>
+                    <div className="cta-links">
+                        <a className="me-4" 
+                        style={{fontSize:'1rem'}}
+                        href="" >Daha fazla bilgi<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
+
+                        <a 
+                        style={{fontSize:'1rem'}} 
+                        href="">Satın alın</a><img src="https://i.hizliresim.com/t2bcvmu.png" alt="" />
+                    </div>
+                    </figure>
+                </div>
+
             </div>
+
+
+
+
+
+
+
         </section>
     )
 }
