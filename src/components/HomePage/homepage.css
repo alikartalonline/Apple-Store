@@ -104,21 +104,18 @@ font-size: 28px;
 text-align: center;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 letter-spacing: .03em;
-
 }
 
-.watchmain{
-max-width: 100%;
-}
+
 
 .watch-image{
     background-image: url(https://www.apple.com/tr/home/images/heroes/watch-series-7/hero__dvsxv8smkkgi_largetall_2x.jpg);
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     transform: translatey(-30%);
     width: 100%;
     height: 736px;
-    background-size: 150% 736px;
+    background-size: 250% 736px;
     background-repeat: no-repeat;
     left: calc(0%);
     z-index: -1;
@@ -138,3 +135,48 @@ max-width: 100%;
     z-index: -1;
     mask-size: 30%;
 } */
+
+
+
+.section3{
+    color: #ca2166;
+}
+
+.headlineuni{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #1d1d1f;
+    white-space: nowrap;
+    margin-top: -100px;
+}
+
+.subheadsection3{
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 6px;
+    color: #1d1d1f;
+    text-align: center;
+    display: block;
+}
+
+.uni-image{
+    background-image: url(https://www.apple.com/tr/home/images/heroes/back-to-school-2022/hero_bts_alt__cbvhgv9ay03m_largetall_2x.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translatey(-30%);
+    width: 100%;
+    height: 736px;
+    background-size: 150% 736px;
+    background-repeat: no-repeat;
+    left: calc(0%);
+    z-index: -1;
+    background-position: center;
+}

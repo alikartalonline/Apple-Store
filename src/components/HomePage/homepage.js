@@ -9,7 +9,7 @@ function HomePage() {
             <div className='row '>
 
 
-                <div class="col-12  ">
+                <div className="col-12  ">
                     <div className='posmac'>
                         <h2 className="headline ">MacBook Air</h2>
 
@@ -28,7 +28,7 @@ function HomePage() {
 
                 </div>
 
-                <div className='col-12 watchmain' >
+                <div className='col-12' >
                     <div className='WATCH'>
                     </div>
                     <h1 className='watch-text'>Özgürlük çağrısı.</h1>
@@ -36,16 +36,36 @@ function HomePage() {
                     <div className="cta-links">
                         <a className="me-4" href="" >Daha fazla bilgi<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
 
-                        <a className="" href="">Ön sipariş</a><img src="https://i.hizliresim.com/t2bcvmu.png" alt="" />
+                        <a className="" href="">Satın alın</a><img src="https://i.hizliresim.com/t2bcvmu.png" alt="" />
                     </div>
-                    <figure class="watch-image">
-
+                    <figure className="watch-image">
                     </figure>
                 </div>
 
 
+                <div className='col-12 '>
 
+                    <h2
+                        className="headlineuni" >
+                        Üniversitede
+                        {" "}
+                        <span className='section3'>süper güçleriniz</span>
+                        {" "}
+                        olsun.
+                    </h2>
 
+                    <h3 className='subheadsection3 '>
+                        Mac veya iPad satın alın, tasarruf edin. Ve AirPods sahibi olun.
+                    </h3>
+
+                    <div className="cta-links">
+                        <a className="me-4" href="" >Alışveriş yapın<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
+                    </div>
+
+                    <figure className="uni-image">
+                    </figure>
+
+                </div>
 
 
             </div>
