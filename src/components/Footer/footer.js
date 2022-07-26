@@ -196,9 +196,33 @@ function Footer() {
 
                     </div>
 
-                    <p className='col-12 footerbottom'>Diğer alışveriş seçenekleri: Yakınınızda bir Apple Store veya başka bir yetkili satıcı bulun. Veya 00800 448 829 873 ya da 0216 282 15 11 numaralı telefonu arayın.</p>
+                    <p className='col-12 footerbottom'>
+                        Diğer alışveriş seçenekleri: Yakınınızda <a className='text-primary' href="">bir Apple Store</a> veya <a className='text-primary' href="">başka bir yetkili satıcı bulun</a>. Veya 00800 448 829 873 ya da 0216 282 15 11 numaralı telefonu arayın.
+                    </p>
 
 
+                    <div className='mb-3 col-12' >
+
+                        <p className='col-12'>
+                            Telif Hakkı © {new Date().getFullYear()} Apple Inc. Tüm hakları saklıdır.
+
+                            <a href="" style={{ fontSize: "1.1em", float: "right" }}>
+                                Türkiye
+                            </a>
+                        </p>
+
+
+                        <div className='footer-legal-links'>
+                            <a href="" >Gizlilik Politikası</a>
+                            <a href="" >Çerezlerin Kullanımı</a>
+                            <a href="" >Kullanım Şartları</a>
+                            <a href="" >Satış ve Para İadesi</a>
+                            <a href="" >Yasal Bilgiler</a>
+                            <a href="" >Site Haritası</a>
+                            <a href="" style={{ borderRight: "none" }}>Bilgi Toplumu Hizmetleri</a>
+                        </div>
+
+                    </div>
 
 
 
