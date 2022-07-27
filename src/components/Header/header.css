@@ -107,11 +107,11 @@ a:hover {
 
 
 .ac-gn-bag-wrapper {
-    cursor: pointer;
-    height: 100%;
     opacity: .8;
     transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* cursor: pointer; */
+    /* height: 100%; */
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
 }
 
 .ac-gn-link-bag {
@@ -201,7 +201,37 @@ a:hover {
     text-decoration: none;
     text-overflow: hidden;
     white-space: nowrap;
-    /* overflow: hidden; */
     list-style: none;
-    /* overflow: hidden; */
 }
+
+.dropdown ul{
+    /* background-color: red; */
+    height: 300px;
+    width: 300px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.dropdown ul li{
+margin-bottom: -3px;
+}
+
+
+.dropdown-menu a{
+    color: #06c;
+  font-size: 15px;
+  
+}
+
+.dropdown-menu li p:hover{
+   /* color: red; */
+   background-color: transparent;
+
+}
+
+.dropdown-menu a:hover{
+    background-color: transparent;
+    color: rgb(29, 133, 236);
+    font-size: 15px;
+    text-decoration: underline;
+  }
