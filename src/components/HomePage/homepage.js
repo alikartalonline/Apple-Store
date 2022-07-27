@@ -1,5 +1,6 @@
 import React from 'react';
 import './homepage.css';
+import Footer from '../Footer/footer';
 
 function HomePage() {
 
@@ -191,6 +192,7 @@ function HomePage() {
 
             </div>
 
+      <Footer /> 
 
         </section>
     )

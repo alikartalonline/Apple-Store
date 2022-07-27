@@ -148,12 +148,14 @@ function Header() {
 
                                     <li><hr className="dropdown-divider" /></li>
 
-                                    <li><a className="dropdown-item" href="#">
+                                    <li>
+                                    <Link to='/Account'><a className="dropdown-item" href="#">
                                         <img
                                             style={{ marginRight: "10px" }}
                                             src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
                                         Oturum açın
                                     </a>
+                                    </Link> 
                                     </li>
 
                                 </ul>
