@@ -81,23 +81,48 @@ function Account() {
                     </div>
 
 
-                    <div className='col-12 account-selected mt-3' >
-                        <h3
+                    <div className='col-12 d-flex account-selected mt-3' >
 
-                            className=''
-                        >
-                            ÜLKE / BÖLGE
-                        </h3>
-                        <select className="form-select" >
-                            <option selected>Türkiye</option>
-                            <option value="Canada">Canada</option>
-                            <option value="USA">USA</option>
-                            <option value="Germany">Germany</option>
-                        </select>
+                        <div className='col'></div>
+
+                        <div className='col-4'>
+                            <h3
+                                className=''
+                            >
+                                ÜLKE / BÖLGE
+                            </h3>
+                            <select className="form-select" >
+                                <option selected>Türkiye</option>
+                                <option value="Canada">Canada</option>
+                                <option value="USA">USA</option>
+                                <option value="Germany">Germany</option>
+                            </select>
+                        </div>
+
+                        <div className='col'></div>
+
                     </div>
 
 
+                    <div className='col-12 d-flex mt-2'>
 
+                    <div className='col'></div>
+
+                        <div className="form-floating mt-2 col-4" >
+                            <input 
+                            type="number" 
+                            className="form-control" 
+                            id="floatingInput" 
+                            placeholder="gg.aa.yyyy"
+                            
+                            />
+                            <label for="floatingInput">Doğum Tarihi </label>
+                        </div>
+
+                        <div className='col'></div>
+
+
+                    </div>
 
 
 
