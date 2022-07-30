@@ -88,8 +88,9 @@ nav {
 } */
 
 
-a:hover {
+.ac-gn-list a:hover {
     color: white;
+    text-decoration: none;
 }
 
 

@@ -53,59 +53,45 @@ function Account() {
                         <h2 className=''>Apple Kimliğinizi Oluşturun</h2>
                         <p>
                             Tüm Apple hizmetlerine erişim için tek ihtiyacınız olan bir Apple Kimliği.
-                            <br />Zaten Apple Kimliğiniz var mı? <a href="/">Burada bulabilirsiniz<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
+                           <br/>Zaten Apple Kimliğiniz var mı? <a href="/">Burada bulabilirsiniz<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
                         </p>
-
                     </div>
 
+<div className='account-input col-12'>
+    <input type="text" id="fname"  name="fname" placeholder='Ad' />
+    <input type="text" id="lname"  name="lname" placeholder='Soyad' style={{marginLeft:"1%"}}/>
 
 
-                    <div className='d-flex col-12'>
+<div className='col-12 mt-5  '>
 
-                        <div className='col'></div>
+    <label 
+    htmlFor="" 
+    className='col-12'
+    >
+     ÜLKE / BÖLGE
+    </label>
 
-                        <div className="form-floating mb-3 col-2">
-                            <input type="text" className="form-control" id="floatingInput" placeholder="Ad" />
-                            <label for="floatingInput">Ad </label>
-                        </div>
+    <select id="country" name="country" className='col-12' style={{width:"40%"}}>
+    <option value="australia">Türkiye</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
 
-
-                        <div className="form-floating mb-3 ms-3 col-2" >
-                            <input type="text" className="form-control" id="floatingInput" placeholder="Soyad" />
-                            <label for="floatingInput">Soyad </label>
-                        </div>
-
-                        <div className='col'></div>
-
-
-                    </div>
+</div>
 
 
-                    <div className='col-12 account-selected mt-3' >
-                        <h3
-
-                            className=''
-                        >
-                            ÜLKE / BÖLGE
-                        </h3>
-                        <select className="form-select" >
-                            <option selected>Türkiye</option>
-                            <option value="Canada">Canada</option>
-                            <option value="USA">USA</option>
-                            <option value="Germany">Germany</option>
-                        </select>
-                    </div>
+<input 
+type="number" 
+className='mt-3' 
+style={{width:"40%"}}  
+id="birthday"  
+name="birthday" 
+placeholder='Doğum Tarihi' 
+/>
 
 
 
-
-
-
-
-
-
-
-
+</div>
 
                     <hr style={{ marginTop: "40px" }} />
 
