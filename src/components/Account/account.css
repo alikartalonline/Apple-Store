@@ -130,3 +130,15 @@
     box-sizing: border-box;
 }
 
+.tel{
+    font-size: 14px;
+    line-height: 1.42861;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 10px;
+    width: 90%;
+    color: #666;
+
+}
+

@@ -72,9 +72,9 @@ function HomePage() {
 
                 <div className='col-6 mbpro me-2'>
                     <figure className='mbpro-image'>
-                        <h4 class="headlinesection4" >13 inç MacBook Pro</h4>
+                        <h4 className="headlinesection4" >13 inç MacBook Pro</h4>
                         <h5
-                            class="section4subhead"
+                            className="section4subhead"
                         >
                         </h5>
                         <div className="cta-links">
@@ -94,7 +94,7 @@ function HomePage() {
                 <div className='col-6'>
                     <figure className='ip13-image'>
                         <h1 className='headlinei13'>iPhone 13</h1>
-                        <h3 class="subheadi13">Süper bir güç.</h3>
+                        <h3 className="subheadi13">Süper bir güç.</h3>
                         <div className="cta-links">
                             <a className="me-4"
                                 style={{ fontSize: '1rem' }}
@@ -115,7 +115,7 @@ function HomePage() {
                 <div className='col-6 me-2'>
                     <figure className='i13pro-image'>
                         <h1 className='headlinei13'>iPhone 13 Pro</h1>
-                        <h3 class="subheadi13">Pro. Aktif.</h3>
+                        <h3 className="subheadi13">Pro. Aktif.</h3>
                         <div className="cta-links">
                             <a className="me-4"
                                 style={{ fontSize: '1rem' }}
@@ -133,8 +133,8 @@ function HomePage() {
                 <div className='col-6'>
                     <figure className='apods-image'>
                         <div className='apodscontainer'>
-                            <h4 class="headlineapods">AirPods</h4>
-                            <h5 class="subheadapods">Uzamsal Ses teknolojisine sahip <br /> yepyeni tasarım.</h5>
+                            <h4 className="headlineapods">AirPods</h4>
+                            <h5 className="subheadapods">Uzamsal Ses teknolojisine sahip <br /> yepyeni tasarım.</h5>
                             <div className="cta-links">
                                 <a className="me-4"
                                     style={{ fontSize: '1rem' }}
@@ -159,8 +159,8 @@ function HomePage() {
                 <div className='col-6 me-2'>
                     <figure className='airtag-image'>
                         <div className='airtagcontainer'>
-                            <h4 class="airtagheadline"></h4>
-                            <h5 class="subheadairtag">Hafif. Rengarenk. Gücüyle tek.</h5>
+                            <h4 className="airtagheadline"></h4>
+                            <h5 className="subheadairtag">Hafif. Rengarenk. Gücüyle tek.</h5>
                             <div className="cta-links">
                                 <a className="me-4"
                                     style={{ fontSize: '1.1rem' }}

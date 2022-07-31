@@ -17,7 +17,7 @@ function Footer() {
 
                     <div className='col'>
                         <ul className='container'>
-                            <h3 class="directory-section-title">Alışveriş ve Detaylı Bilgi</h3>
+                            <h3 className="directory-section-title">Alışveriş ve Detaylı Bilgi</h3>
                             <li>
                                 <a href="">store</a>
                             </li>
@@ -51,7 +51,7 @@ function Footer() {
 
                     <div className='col'>
                         <ul className='container'>
-                            <h3 class="directory-section-title">Servisler</h3>
+                            <h3 className="directory-section-title">Servisler</h3>
                             <li>
                                 <a href="">Apple Music</a>
                             </li>
@@ -73,7 +73,7 @@ function Footer() {
                         </ul>
 
                         <ul className='container' >
-                            <h3 class="directory-section-title mt-5">Hesap</h3>
+                            <h3 className="directory-section-title mt-5">Hesap</h3>
 
                             <li>
                                 <a href="">Apple ID'nizi Yönetin</a>
@@ -91,7 +91,7 @@ function Footer() {
 
                     <div className='col'>
                         <ul className='container'>
-                            <h3 class="directory-section-title">Apple Store</h3>
+                            <h3 className="directory-section-title">Apple Store</h3>
                             <li>
                                 <a href="">Mağaza Bulun</a>
                             </li>
@@ -126,7 +126,7 @@ function Footer() {
 
                     <div className='col'>
                         <ul className='container'>
-                            <h3 class="directory-section-title">Kurumsal Müşteriler İçin</h3>
+                            <h3 className="directory-section-title">Kurumsal Müşteriler İçin</h3>
                             <li>
                                 <a href="">Apple ve İş Dünyası</a>
                             </li>
@@ -136,7 +136,7 @@ function Footer() {
                         </ul>
 
                         <ul className='container'>
-                            <h3 class="directory-section-title mt-5">Eğitim İçin</h3>
+                            <h3 className="directory-section-title mt-5">Eğitim İçin</h3>
                             <li>
                                 <a href="">Apple ve Eğitim</a>
                             </li>
@@ -154,7 +154,7 @@ function Footer() {
 
                     <div className='col'>
                         <ul className='container'>
-                            <h3 class="directory-section-title">Apple'ın Değerleri</h3>
+                            <h3 className="directory-section-title">Apple'ın Değerleri</h3>
                             <li>
                                 <a href="">Erişebilirlik</a>
                             </li>
@@ -170,7 +170,7 @@ function Footer() {
                         </ul>
 
                         <ul className='container'>
-                            <h3 class="directory-section-title mt-5"> Apple Hakkında</h3>
+                            <h3 className="directory-section-title mt-5"> Apple Hakkında</h3>
                             <li>
                                 <a href="">Newsroom</a>
                             </li>
