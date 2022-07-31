@@ -142,3 +142,62 @@
 
 }
 
+.privacy-icon{
+    background-image: url(https://appleid.cdn-apple.com/static/bin/cb230738313/dist/assets/privacy-icon@2x.png);
+    width: 35px;
+    height: 28px;
+    margin: 10px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+.privacy{
+    max-width: 465px;
+    padding-bottom: 30px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.33341;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+.privacy a{
+    color: #0070c9;
+}
+
+.privacy-button{
+    font-size: 18px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background: linear-gradient(#42a1ec,#0070c9);
+    border: 1px solid #07c;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding: 4px 15px;
+    white-space: nowrap;
+    margin-bottom: 200px;
+}
+
+.privacy-button:hover{
+    background: linear-gradient(#69abdd,#0f82df);
+}
+
+
+
+
+
+
+
+
+
+
+

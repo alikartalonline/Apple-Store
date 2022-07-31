@@ -179,21 +179,21 @@ function Account() {
 
                         <div className='col'></div>
 
-                        <div class=" col mt-3 d-flex">
-                            <legend class="col-form-label col-sm-5 ">Şununla doğrulayın:</legend>
+                        <div className=" col mt-3 d-flex">
+                            <legend className="col-form-label col-sm-5 ">Şununla doğrulayın:</legend>
 
-                            <div class="d-flex mt-2">
+                            <div className="d-flex mt-2">
 
-                                <div class="form-check col-6">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked />
-                                    <label class="form-check-label" for="gridRadios1">
+                                <div className="form-check col-6">
+                                    <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked />
+                                    <label className="form-check-label" htmlFor="gridRadios1">
                                         SMS
                                     </label>
                                 </div>
 
-                                <div class="form-check col-2" style={{ whiteSpace: "nowrap" }}>
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" />
-                                    <label class="form-check-label" for="gridRadios2">
+                                <div className="form-check col-2" style={{ whiteSpace: "nowrap" }}>
+                                    <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" />
+                                    <label className="form-check-label" htmlFor="gridRadios2">
                                         Telefon Araması
                                     </label>
                                 </div>
@@ -205,8 +205,78 @@ function Account() {
                         <div className='col'></div>
 
                     </div>
-                    
+
                     <hr style={{ marginTop: "20px" }} />
+
+
+
+                    <div className='col-12 d-flex mt-1'>
+
+                        <div className='col'></div>
+
+                        <div className="form-check col-4">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                            <label className="form-check-label" htmlFor="flexCheckChecked">
+                                Duyurular
+                            </label>
+                            <p>Apple ürünleri, hizmetleri ve yazılımları hakkında e-postalar ve duyurular, pazarlama, öneriler ve güncellemeler gibi iletişimleri alın.</p>
+                        </div>
+
+                        <div className='col'></div>
+
+                    </div>
+
+
+
+                    <div className='col-12 d-flex mt-1'>
+
+                        <div className='col'></div>
+
+                        <div className="form-check col-4">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                            <label className="form-check-label" for="flexCheckChecked">
+                                Uygulamalar, Müzik, TV ve Daha Fazlası
+                            </label>
+                            <p>Uygulamalar, müzik, filmler, TV, kitaplar, podcast’ler ve daha fazlası hakkında öneriler, pazarlamalar, yeni çıkanlar, özel teklifler ve içerikler olan Apple e-postalarını ve iletişimlerini alın.</p>
+                        </div>
+
+                        <div className='col'></div>
+
+                    </div>
+
+                    <hr style={{ marginTop: "20px" }} />
+
+
+                    <div className='col-12 d-flex mt-1'>
+
+                        <div className='col'></div>
+
+                        <div className=" col-4">
+                            <div className='privacy-icon'></div>
+                            <div className='privacy'>Apple Kimliği bilgileriniz, güvenli bir şekilde giriş yapmanızı sağlar. Apple; güvenlik, destek ve raporlama amaçları doğrultusunda bazı kullanım verilerini kaydeder. Eğer kabul ederseniz Apple, Apple hizmetlerini kullanmanıza dayalı olanlar da dâhil olmak üzere size pazarlama e‑postaları ve iletişimleri göndermek için Apple Kimliği bilgilerinizi kullanabilir. <a href="">Verilerinizin nasıl yönetildiğini görün.</a></div>
+
+                        </div>
+
+                        <div className='col'></div>
+
+                    </div>
+
+
+
+
+                    <div className='col-12 d-flex mt-1'>
+
+                        <div className='col'></div>
+
+                        <div className=" col-1">
+                            <button type="button" className="privacy-button">
+                                Devam
+                            </button>
+                        </div>
+
+                        <div className='col'></div>
+
+                    </div>
 
 
 
@@ -220,7 +290,7 @@ function Account() {
 
 
 
-        </div>
+        </div >
     )
 }
 
