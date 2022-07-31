@@ -49,91 +49,91 @@ function Account() {
             <div className='container'>
                 <div className='row'>
 
+
+                    {/* SECTION TITLE and P */}
                     <div className='col-12 account-title'>
                         <h2 className=''>Apple Kimliğinizi Oluşturun</h2>
                         <p>
                             Tüm Apple hizmetlerine erişim için tek ihtiyacınız olan bir Apple Kimliği.
                             <br />Zaten Apple Kimliğiniz var mı? <a href="/">Burada bulabilirsiniz<img src="https://i.hizliresim.com/t2bcvmu.png" alt="" /></a>
                         </p>
-
                     </div>
 
-
-
+                    {/* NAME - SURNAME  */}
                     <div className='d-flex col-12'>
-
                         <div className='col'></div>
 
                         <div className="form-floating mb-3 col-2">
-                            <input type="text" className="form-control" id="floatingInput" placeholder="Ad" />
+
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="floatingInput"
+                                placeholder="Ad" />
+
                             <label htmlFor="floatingInput">Ad </label>
                         </div>
 
-
                         <div className="form-floating mb-3 ms-3 col-2" >
-                            <input type="text" className="form-control" id="floatingInput" placeholder="Soyad" />
+
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="floatingInput"
+                                placeholder="Soyad" />
+
                             <label htmlFor="floatingInput">Soyad </label>
                         </div>
 
                         <div className='col'></div>
-
-
                     </div>
 
-
+                    {/* COUNTRY */}
                     <div className='col-12 d-flex account-selected mt-3' >
-
                         <div className='col'></div>
 
                         <div className='col-4'>
-                            <h3
-                                className=''
-                            >
-                                ÜLKE / BÖLGE
-                            </h3>
+                            <h3>ÜLKE / BÖLGE</h3>
+
                             <select className="form-select" >
                                 <option defaultValue>Türkiye</option>
                                 <option value="Canada">Canada</option>
                                 <option value="USA">USA</option>
                                 <option value="Germany">Germany</option>
                             </select>
+
                         </div>
 
                         <div className='col'></div>
-
                     </div>
 
-
+                    {/* BIRTHDAY  */}
                     <div className='col-12 d-flex mt-2'>
-
                         <div className='col'></div>
 
                         <div className="form-floating mt-2 col-4" >
+
                             <input
                                 type="number"
                                 className="form-control"
                                 id="floatingInput"
                                 placeholder="gg.aa.yyyy"
-
                             />
-                            <label htmlFor="floatingInput">Doğum Tarihi </label>
+
+                            <label htmlFor="floatingInput">Doğum Tarihi</label>
                         </div>
 
                         <div className='col'></div>
-
-
                     </div>
 
 
                     <hr style={{ marginTop: "40px" }} />
 
-
+                    {/* TEL NUMBER - 1*/}
                     <div className='col-12 d-flex account-selected mt-3' >
-
                         <div className='col'></div>
 
                         <div className='col-4'>
-
                             <select className="form-select" >
                                 <option defaultValue>+90 (Türkiye)</option>
                                 <option value="USA">+1 (Amerika Birleşik Devletleri)</option>
@@ -143,11 +143,10 @@ function Account() {
                         </div>
 
                         <div className='col'></div>
-
                     </div>
 
+                    {/* TEL NUMBER - 2*/}
                     <div className='col-12 d-flex mt-2'>
-
                         <div className='col'></div>
 
                         <div className="form-floating mt-2 col-4" >
@@ -163,20 +162,15 @@ function Account() {
                             <div className="tel">
                                 Her zaman erişebileceğiniz bir telefon numarası girdiğinizden emin olun. Yeni bir aygıtta veya web tarayıcısında her giriş yaptığınızda bu telefon numarası kimliğinizi doğrulamak için kullanılacak. Mesajlaşma veya veri ücreti uygulanabilir.
                             </div>
-
-
-
                         </div>
 
-
                         <div className='col'></div>
-
-
                     </div>
 
 
-                    <div className='col-12 d-flex mt-1'>
 
+                    {/* VERIFICATION */}
+                    <div className='col-12 d-flex mt-1'>
                         <div className='col'></div>
 
                         <div className=" col mt-3 d-flex">
@@ -206,12 +200,13 @@ function Account() {
 
                     </div>
 
+
+
                     <hr style={{ marginTop: "20px" }} />
 
 
-
+                    {/* CHECKBOX - 1*/}
                     <div className='col-12 d-flex mt-1'>
-
                         <div className='col'></div>
 
                         <div className="form-check col-4">
@@ -223,13 +218,11 @@ function Account() {
                         </div>
 
                         <div className='col'></div>
-
                     </div>
 
 
-
+                    {/* CHECKBOX - 2*/}
                     <div className='col-12 d-flex mt-1'>
-
                         <div className='col'></div>
 
                         <div className="form-check col-4">
@@ -241,48 +234,45 @@ function Account() {
                         </div>
 
                         <div className='col'></div>
-
                     </div>
+
+
 
                     <hr style={{ marginTop: "20px" }} />
 
 
-                    <div className='col-12 d-flex mt-1'>
 
+                    {/* PRIVACY ICON */}
+                    <div className='col-12 d-flex mt-1'>
                         <div className='col'></div>
 
                         <div className=" col-4">
                             <div className='privacy-icon'></div>
-                            <div className='privacy'>Apple Kimliği bilgileriniz, güvenli bir şekilde giriş yapmanızı sağlar. Apple; güvenlik, destek ve raporlama amaçları doğrultusunda bazı kullanım verilerini kaydeder. Eğer kabul ederseniz Apple, Apple hizmetlerini kullanmanıza dayalı olanlar da dâhil olmak üzere size pazarlama e‑postaları ve iletişimleri göndermek için Apple Kimliği bilgilerinizi kullanabilir. <a href="">Verilerinizin nasıl yönetildiğini görün.</a></div>
-
+                            <div className='privacy'>
+                                Apple Kimliği bilgileriniz, güvenli bir şekilde giriş yapmanızı sağlar. Apple; güvenlik, destek ve raporlama amaçları doğrultusunda bazı kullanım verilerini kaydeder. Eğer kabul ederseniz Apple, Apple hizmetlerini kullanmanıza dayalı olanlar da dâhil olmak üzere size pazarlama e-postaları ve iletişimleri göndermek için Apple Kimliği bilgilerinizi kullanabilir. <a href="">Verilerinizin nasıl yönetildiğini görün.</a>
+                            </div>
                         </div>
 
                         <div className='col'></div>
-
                     </div>
 
 
 
-
+                    {/* BUTTON*/}
                     <div className='col-12 d-flex mt-1'>
-
                         <div className='col'></div>
 
                         <div className=" col-1">
-                            <button type="button" className="privacy-button">
+                            <button
+                                type="button"
+                                className="privacy-button"
+                            >
                                 Devam
                             </button>
                         </div>
 
                         <div className='col'></div>
-
                     </div>
-
-
-
-
-
-
 
 
                 </div>
