@@ -1,6 +1,6 @@
 import React from 'react';
 import './account.css';
-
+import AccountFooter from './accountFooter';
 
 function Account() {
 
@@ -279,7 +279,7 @@ function Account() {
             </div>
 
 
-
+<AccountFooter />
         </div >
     )
 }
