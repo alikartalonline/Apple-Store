@@ -28,3 +28,6 @@
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working2.gif)
 
+<br>
+
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working3.gif)
