@@ -1,0 +1,80 @@
+.store {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.cards1{
+    /* width: fit-content; */
+    height: 500px;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    border-color: transparent;
+    white-space: normal;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.Title{
+    padding-top: 30px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f;
+    margin: 0 0 9px;
+    padding-top: 24px;
+}
+
+.cardImg{
+    /* margin-left: 20%; */
+}
+
+.buybutton{
+/* float: right; */
+/* text-align: center; */
+/* display: inline-block; */
+    white-space: nowrap;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-width: 28px;
+    /* min-width: auto; */
+    height: fit-content;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 980px;
+    background: #0071e3;
+    color: #fff;
+    --sk-button-margin-horizontal: 14px;
+    --sk-button-margin-vertical: 14px;
+}
+
+.cardp{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f;
+    white-space: normal;
+}
