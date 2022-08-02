@@ -19,9 +19,11 @@ function Header() {
                         </li>
 
                         <li className='col'>
-                            <a className="ac-gn-link ac-gn-link-store" href="" data-analytics-title="store">
-                                <span className="ac-gn-link-text">Store</span>
-                            </a>
+                            <Link to='/Store'>
+                                <a className="ac-gn-link ac-gn-link-store" href="" data-analytics-title="store">
+                                    <span className="ac-gn-link-text">Store</span>
+                                </a>
+                            </Link>
                         </li>
 
                         <li className='col'>
@@ -86,7 +88,7 @@ function Header() {
 
                         <li className="col">
                             <div className="ac-gn-bag-wrapper dropdown "
-                            
+
                             >
                                 <a
                                     className="ac-gn-link ac-gn-link-bag  "
@@ -99,8 +101,8 @@ function Header() {
                                 </a>
 
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><p className="dropdown-item" 
-                                    style={{ padding: "20px", fontSize: "15px", textAlign:"center" }}
+                                    <li><p className="dropdown-item"
+                                        style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
                                     >
                                         Alışveriş çantanız boş.
                                     </p>
@@ -149,13 +151,13 @@ function Header() {
                                     <li><hr className="dropdown-divider" /></li>
 
                                     <li>
-                                    <Link to='/Account'><a className="dropdown-item" href="#">
-                                        <img
-                                            style={{ marginRight: "10px" }}
-                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
-                                        Oturum açın
-                                    </a>
-                                    </Link> 
+                                        <Link to='/Account'><a className="dropdown-item" href="#">
+                                            <img
+                                                style={{ marginRight: "10px" }}
+                                                src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
+                                            Oturum açın
+                                        </a>
+                                        </Link>
                                     </li>
 
                                 </ul>
