@@ -17,9 +17,9 @@ function Footer() {
 
                     <div className='col'>
                         <ul className='container'>
-                            <h3 className="directory-section-title">Alışveriş ve Detaylı Bilgi</h3>
+                            <h3 className="directory-section-title aclass">Alışveriş ve Detaylı Bilgi</h3>
                             <li>
-                                <a href="">store</a>
+                                <a className='' href="">store</a>
                             </li>
                             <li>
                                 <a href="">Mac</a>
@@ -197,7 +197,7 @@ function Footer() {
                     </div>
 
                     <p className='col-12 footerbottom'>
-                        Diğer alışveriş seçenekleri: Yakınınızda <a className='text-primary' href="">bir Apple Store</a> veya <a className='text-primary' href="">başka bir yetkili satıcı bulun</a>. Veya 00800 448 829 873 ya da 0216 282 15 11 numaralı telefonu arayın.
+                        Diğer alışveriş seçenekleri: Yakınınızda <a className='text-primary' href="">bir Apple Store</a> veya <a className='text-primary aclass' href="">başka bir yetkili satıcı bulun</a>. Veya 00800 448 829 873 ya da 0216 282 15 11 numaralı telefonu arayın.
                     </p>
 
 
@@ -206,7 +206,7 @@ function Footer() {
                         <p className='col-12'>
                             Telif Hakkı © {new Date().getFullYear()} Apple Inc. Tüm hakları saklıdır.
 
-                            <a href="" style={{ fontSize: "1.1em", float: "right" }}>
+                            <a className='aclass' href="" style={{ fontSize: "1.1em", float: "right" }}>
                                 Türkiye
                             </a>
                         </p>

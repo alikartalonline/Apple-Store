@@ -64,9 +64,18 @@ a:visited,
 }
 
 
-a:hover {
+.cta-links a:hover {
     color: rgb(8, 120, 232);
     text-decoration: underline;
+}
+
+.cta-links a{
+    color: #06c;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .WATCH {

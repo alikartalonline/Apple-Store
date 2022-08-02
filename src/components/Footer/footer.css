@@ -53,12 +53,14 @@ ul li{
     line-height: 1;
 }
 
-a:hover{
+ul li a:hover, .aclass:hover, .footer-legal-links a:hover{
     color: #424245;
+    text-decoration: underline;
 }
 
 
-a{
+
+ul li a, a.class, .footer-legal-links a{
     color: #424245;
     font-size: 12px;
     font-weight: 400;
