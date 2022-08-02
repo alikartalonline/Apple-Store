@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: fit-content;
+    /* max-width: max-content; */
+    /* max-width: 100%; */
 
 }
 
