@@ -13,37 +13,37 @@
 
 <br>
 
-### Stage - 1:
+### Stage - 1: Start
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/chapter1.png)
 
 <br>
 
-### Stage - 2:
+### Stage - 2: Homepage
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working1.gif)
 
 
 <br>
 
-### Stage - 3:
+### Stage - 3: Footer
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/footer.png)
 
 <br>
 
-### Stage - 4:
+### Stage - 4: Homepage + Footer 
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working2.gif)
 
 <br>
 
-### Stage - 5:
+### Stage - 5: Sign Up
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working3.gif)
 
 <br>
 
-### Stage - 6:
+### Stage - 6: Homepage - Sign Up - Store
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working4.gif)
