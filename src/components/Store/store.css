@@ -2,14 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* width: fit-content; */
-    /* max-width: max-content; */
-    /* max-width: 100%; */
-
 }
 
 .cards1{
-    /* width: fit-content; */
+    z-index: -1;
     height: 500px;
     white-space: nowrap;
     cursor: pointer;
