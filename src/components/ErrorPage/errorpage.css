@@ -1,0 +1,12 @@
+
+
+.classContainer{
+    margin-top: 20%;
+/* position: absolute; */
+}
+
+.classContainer span{
+    color: black;
+    opacity: 0.5;
+    font-style: italic;
+}
