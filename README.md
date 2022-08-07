@@ -47,3 +47,9 @@
 ### Stage - 6: Homepage - Sign Up - Store
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working4.gif)
+
+<br>
+
+### Stage - 7: ErrorPage
+
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/errorPage.png)
