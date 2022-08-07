@@ -87,7 +87,7 @@ function Header() {
                         </li>
 
                         <li className="col">
-                            <div className="ac-gn-bag-wrapper dropdown "
+                            <div className="ac-gn-bag-wrapper  dropdown "
 
                             >
                                 <a
@@ -100,12 +100,17 @@ function Header() {
                                 >
                                 </a>
 
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><p className="dropdown-item"
-                                        style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
-                                    >
-                                        Alışveriş çantanız boş.
-                                    </p>
+                                <ul 
+                                className="dropdown-menu" 
+                                aria-labelledby="dropdownMenuLink"
+                                >
+
+                                    <li>
+                                        <p className="dropdown-item "
+                                            style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
+                                        >
+                                            Alışveriş çantanız boş.
+                                        </p>
                                     </li>
 
                                     <li><hr className="dropdown-divider" /></li>
@@ -140,28 +145,28 @@ function Header() {
 
                                     <li><hr className="dropdown-divider" /></li>
 
-                                    <li><a className="dropdown-item" href="#">
+                                    <li><Link to='/Account'><a className="dropdown-item" href="#">
                                         <img
                                             style={{ marginRight: "10px" }}
                                             src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="" />
-                                        Hesap
+                                        Kayıt olun
                                     </a>
+                                    </Link>
                                     </li>
 
                                     <li><hr className="dropdown-divider" /></li>
 
-                                        
+
                                     <li >
-                                        <Link to='/Account'><a 
-                                        className="dropdown-item" 
-                                        href="#"
+                                        <a
+                                            className="dropdown-item"
+                                            href="#"
                                         >
                                             <img
                                                 style={{ marginRight: "10px" }}
                                                 src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
                                             Oturum açın
                                         </a>
-                                        </Link>
                                     </li>
 
                                 </ul>

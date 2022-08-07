@@ -10,14 +10,17 @@ function accountFooter() {
                 <div className='row '>
 
                     <div>
-                        <p className='col-12 footerbottoms '>
-                            Diğer alışveriş seçenekleri: Yakınınızda <a className='text-primary' href="">bir Apple Store</a> veya <a className='text-primary' href="">başka bir yetkili satıcı bulun</a>. Veya 00800 448 829 873 ya da 0216 282 15 11 numaralı telefonu arayın.
+                        <div className='col-12 footerbottoms '>
+                            <p>
+                            Diğer alışveriş seçenekleri: Yakınınızda <a className='text-primary' href="#">bir Apple Store</a> veya <a className='text-primary' href="">başka bir yetkili satıcı bulun</a>. Veya 00800 448 829 873 ya da 0216 282 15 11 numaralı telefonu arayın.
+                            </p>
 
 
-                            <p className='col-12 mt-1'>
+                            <p className='col-12 mt-1 p-date'>
                                 Telif Hakkı © {new Date().getFullYear()} Apple Inc. Tüm hakları saklıdır.
 
-                                <a href="" style={{ fontSize: "1.1em", float: "right" }}>
+                                <a href="#" 
+                                style={{ fontSize: "1.1em", float: "right", }}>
                                     Türkiye
                                 </a>
                             </p>
@@ -33,7 +36,7 @@ function accountFooter() {
                                 <a href="" style={{ borderRight: "none" }}>Bilgi Toplumu Hizmetleri</a>
                             </div>
 
-                        </p>
+                        </div>
                     </div>
 
                 </div>

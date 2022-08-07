@@ -17,7 +17,6 @@ padding-right: 10%;
     font-weight: 400;
     letter-spacing: -.01em;
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
-    padding-bottom: 10px;
 }
 
 
@@ -32,6 +31,10 @@ a:hover{
     color: #424245;
 }
 
+p a:hover{
+    color:red;
+    text-decoration: underline;
+}
 
 a{
     color: #424245;

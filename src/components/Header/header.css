@@ -74,19 +74,6 @@ nav {
     outline-offset: -7px;
 }
 
-/* header textleri için  */
-/* .ac-gn-link-text{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 44px;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} */
-
 
 .ac-gn-list a:hover {
     color: white;
@@ -160,7 +147,7 @@ nav {
     display: block;
     position: relative;
     z-index: 2;
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     letter-spacing: inherit;
 }
 
@@ -172,7 +159,7 @@ nav {
     position: absolute;
     top: 0;
     z-index: 2;
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 
@@ -193,46 +180,42 @@ nav {
     line-height: 1.28577;
     font-weight: 400;
     letter-spacing: -.014em;
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     background: #fff;
 }
 
 
-.dropdown{
+.dropdown {
     text-decoration: none;
     text-overflow: hidden;
     white-space: nowrap;
     list-style: none;
 }
 
-.dropdown ul{
+.dropdown ul {
     /* background-color: red; */
     height: 300px;
     width: 300px;
-    padding:10px;
+    padding: 10px;
     border-radius: 20px;
 }
 
-.dropdown ul li{
-margin-bottom: -3px;
+.dropdown ul li {
+    margin-bottom: -3px;
 }
 
+.dropdown-menu li p:hover {
+    background-color: transparent;
+}
 
-.dropdown-menu a{
+.dropdown-menu a {
     color: #06c;
-  font-size: 15px;
-  
+    font-size: 15px;
 }
 
-.dropdown-menu li p:hover{
-   /* color: red; */
-   background-color: transparent;
-
-}
-
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     background-color: transparent;
     color: rgb(29, 133, 236);
     font-size: 15px;
     text-decoration: underline;
-  }
+}
