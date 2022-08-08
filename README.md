@@ -63,10 +63,14 @@
 
 <br>
 
-### Stage - 9: Profile - Sign in and LocalStorage
+### Stage - 9: "Profile" - "Sign in" and "LocalStorage"
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/Profile-LocalStorage.png)
 
+<br>
 
+### Stage - 10: "Sign Up" - "Sign in" - "Profile" - "Log in" - "Log out" 
+
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working5.gif)
 
 
