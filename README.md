@@ -53,3 +53,12 @@
 ### Stage - 7: ErrorPage
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/errorPage.png)
+
+<br>
+
+### Stage - 8: Profile
+
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/Profile.png)
+
+
+
