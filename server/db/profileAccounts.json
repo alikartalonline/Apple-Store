@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Ali",
+        "surname": "Kartal",
+        "email": "alikartalonline@gmail.com",
+        "password": "123456789",
+        "passwordConfirm": "123456789",
+        "birthday": "01011990",
+        "telNumber": "11111111111"
+    }
+]
+
