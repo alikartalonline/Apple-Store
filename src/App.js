@@ -5,7 +5,7 @@ import HomePage from './components/HomePage/homepage';
 import Account from './components/Account/account.js';
 import Store from './components/Store/store';
 import ErrorPage from './components/ErrorPage/errorpage.js';
-import Profile from './Profile/profile';
+import Profile from './components/Profile/profile';
 import ProtectedRoute from './components/ProtectedRoute.js/protectedRoute';
 import SignIn from './components/Signin/signin';
 
