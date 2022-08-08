@@ -21,6 +21,13 @@ server.get("/api/products", (req, res) => {
     })
 }) 
 
+server.get("/api/profileAccounts", (req, res) => {
+    fs.readFile('db/profileAccounts.json', function(err,data){
+        res.send(JSON.parse(data))
+    })
+}) 
+
+
 
 server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)

@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './account.css';
 import AccountFooter from './accountFooter';
 import { useFormik } from "formik";
 import validationSchema from './validations';
+import axios from 'axios';
+import { useAuth } from '../../contexts/AuthContext';
+import { useNavigate } from "react-router-dom";
+
 
 function Account() {
 
+    const { login, loggedIn  } = useAuth();
+    const navigate = useNavigate();
+
+    if (loggedIn) {
+        navigate("/profile", { replace: true });
+      }
 
     const formik = useFormik({
         initialValues: {
             name: "",
             surname: "",
+            email: "",
             password: "",
             passwordConfirm: "",
             birthday: "",
@@ -18,9 +29,21 @@ function Account() {
         },
         validationSchema,
         onSubmit: async (values, bag) => {
-          console.log(values)
+            // console.log("values :", values)
+            try {
+                login(values);
+            } catch (e) {
+                bag.setErrors({ general: e.response.data.message })
+                console.log("error varsa :", e)
+            }
         },
-      });
+    });
+// values: Form'daki datalar,
+// bag: O form üzerinde yapabileceğimiz bir takım işlemler var, 
+// onları bize sağlıyor; örneğin formu resetlemek gibi
+
+
+
 
 
     return (
@@ -70,6 +93,19 @@ function Account() {
 
                     {/* SECTION TITLE and P */}
                     <div className='col-12 account-title'>
+
+                        {/* Error Alert */}
+                        <div>
+                            {
+                            formik.errors.general && 
+                                (
+                                    <div className="alert alert-danger" role="alert">
+                                        {formik.errors.general}
+                                    </div>
+                                )
+                            }
+                        </div>
+
                         <h2 className=''>Apple Kimliğinizi Oluşturun</h2>
                         <p style={{ fontSize: "14px" }}>
                             Tüm Apple hizmetlerine erişim için tek ihtiyacınız olan bir Apple Kimliği.
@@ -113,6 +149,32 @@ function Account() {
                                 />
 
                                 <label htmlFor="floatingInput">Soyad </label>
+                            </div>
+
+                            <div className='col'></div>
+                        </div>
+
+                        {/* E-mail */}
+                        <div className='col-12 d-flex account-selected mt-3' >
+                            <div className='col'></div>
+
+                            <div className='col-4'>
+                                <h3>E-Mail</h3>
+                                <div className="form-floating mb-3  col" >
+
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        name="email"
+                                        placeholder="email"
+                                        onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
+                                        value={formik.values.email}
+                                    />
+
+                                    <label htmlFor="floatingInput">E-Mail</label>
+                                </div>
+
                             </div>
 
                             <div className='col'></div>

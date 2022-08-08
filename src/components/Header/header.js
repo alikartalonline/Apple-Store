@@ -2,9 +2,12 @@ import React from 'react';
 import './header.css';
 import { Link } from "react-router-dom";
 
+import { useAuth } from '../../contexts/AuthContext';
+
 function Header() {
+    const { loggedIn } = useAuth();
 
-
+    console.log("loggedIn :", loggedIn)
     return (
         <nav className=''>
             <div className='container'>
@@ -100,9 +103,9 @@ function Header() {
                                 >
                                 </a>
 
-                                <ul 
-                                className="dropdown-menu" 
-                                aria-labelledby="dropdownMenuLink"
+                                <ul
+                                    className="dropdown-menu"
+                                    aria-labelledby="dropdownMenuLink"
                                 >
 
                                     <li>
@@ -145,15 +148,35 @@ function Header() {
 
                                     <li><hr className="dropdown-divider" /></li>
 
-                                    <li><Link to='/Account'><a className="dropdown-item" href="#">
-                                        <img
-                                            style={{ marginRight: "10px" }}
-                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="" />
-                                        Kayıt olun
-                                    </a>
-                                    </Link>
-                                    </li>
+{
+    !loggedIn && ( 
+    <>
+    <li>
+    <Link to='/Account'><a className="dropdown-item" href="#">
+        <img
+            style={{ marginRight: "10px" }}
+            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Kayıt olun" />
+        Kayıt olun
+    </a>
+    </Link>
+</li>
+    </>
+)}
 
+{
+    loggedIn && ( 
+    <>
+    <li>
+    <Link to='/Profile'><a className="dropdown-item" href="#">
+        <img
+            style={{ marginRight: "10px" }}
+            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Profil Hesabim" />
+        Hesap
+    </a>
+    </Link> 
+</li>
+    </>
+)}
                                     <li><hr className="dropdown-divider" /></li>
 
 
