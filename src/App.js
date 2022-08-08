@@ -7,6 +7,7 @@ import Store from './components/Store/store';
 import ErrorPage from './components/ErrorPage/errorpage.js';
 import Profile from './Profile/profile';
 import ProtectedRoute from './components/ProtectedRoute.js/protectedRoute';
+import SignIn from './components/Signin/signin';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Account" element={<Account />} />
+        <Route path="/Signin" element={<SignIn />} />
         <Route path="/Store" element={<Store />} />
         <Route path="/*" element={<ErrorPage />} />
 

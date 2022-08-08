@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {} from 'react';
 import './account.css';
 import AccountFooter from './accountFooter';
 import { useFormik } from "formik";
 import validationSchema from './validations';
-import axios from 'axios';
 import { useAuth } from '../../contexts/AuthContext';
 import { useNavigate } from "react-router-dom";
 
@@ -34,7 +33,7 @@ function Account() {
                 login(values);
             } catch (e) {
                 bag.setErrors({ general: e.response.data.message })
-                console.log("error varsa :", e)
+                console.log("errors :", e)
             }
         },
     });

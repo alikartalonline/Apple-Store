@@ -21,7 +21,7 @@ const logout = async (callback) => {
     setLoggedIn(false);
     setUser(null);
 
-    localStorage.removeItem("dataKey")
+    // localStorage.removeItem("dataKey")
     localStorage.removeItem("LogKey")
     
     callback()

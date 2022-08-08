@@ -148,39 +148,42 @@ function Header() {
 
                                     <li><hr className="dropdown-divider" /></li>
 
-{
-    !loggedIn && ( 
-    <>
-    <li>
-    <Link to='/Account'><a className="dropdown-item" href="#">
-        <img
-            style={{ marginRight: "10px" }}
-            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Kayıt olun" />
-        Kayıt olun
-    </a>
-    </Link>
-</li>
-    </>
-)}
+                                    {
+                                        !loggedIn && (
+                                            <>
+                                                <li>
+                                                    <Link to='/Account'>
+                                                        <a className="dropdown-item" href="#">
+                                                        <img
+                                                            style={{ marginRight: "10px" }}
+                                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Kayıt olun" />
+                                                        Kayıt olun
+                                                    </a>
+                                                    </Link>
+                                                </li>
+                                            </>
+                                        )}
 
-{
-    loggedIn && ( 
-    <>
-    <li>
-    <Link to='/Profile'><a className="dropdown-item" href="#">
-        <img
-            style={{ marginRight: "10px" }}
-            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Profil Hesabim" />
-        Hesap
-    </a>
-    </Link> 
-</li>
-    </>
-)}
+                                    {
+                                        loggedIn && (
+                                            <>
+                                                <li>
+                                                    <Link to='/Profile'>
+                                                        <a className="dropdown-item" href="#">
+                                                        <img
+                                                            style={{ marginRight: "10px" }}
+                                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Profil Hesabim" />
+                                                        Hesap
+                                                    </a>
+                                                    </Link>
+                                                </li>
+                                            </>
+                                        )}
                                     <li><hr className="dropdown-divider" /></li>
 
 
                                     <li >
+                                    <Link to='/Signin'>
                                         <a
                                             className="dropdown-item"
                                             href="#"
@@ -190,6 +193,8 @@ function Header() {
                                                 src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
                                             Oturum açın
                                         </a>
+                                        </Link>
+
                                     </li>
 
                                 </ul>
