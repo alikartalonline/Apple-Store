@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from '../../contexts/AuthContext';
 
 function Header() {
-    const { loggedIn } = useAuth();
+    const { loggedIn, user } = useAuth();
 
     console.log("loggedIn :", loggedIn)
     return (
@@ -162,7 +162,8 @@ function Header() {
                                                     </Link>
                                                 </li>
                                             </>
-                                        )}
+                                        )
+                                    }
 
                                     {
                                         loggedIn && (
@@ -178,10 +179,13 @@ function Header() {
                                                     </Link>
                                                 </li>
                                             </>
-                                        )}
+                                        )
+                                    }
+
                                     <li><hr className="dropdown-divider" /></li>
 
-
+                                    {
+                                        !loggedIn && (
                                     <li >
                                     <Link to='/Signin'>
                                         <a
@@ -194,8 +198,31 @@ function Header() {
                                             Oturum açın
                                         </a>
                                         </Link>
-
                                     </li>
+                                   )
+                                   }
+
+
+                                    {
+                                    loggedIn && (
+                                    <li >
+                                    <Link to='/Profile'>
+                                        <a
+                                            className="dropdown-item"
+                                            href="#"
+                                        >
+                                            <img
+                                                style={{ marginRight: "10px" }}
+                                                src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
+                                            Hoş geldin "{user.name}"
+                                        </a>
+                                        </Link>
+                                    </li>
+                                   )
+                                   }
+
+
+
 
                                 </ul>
 
