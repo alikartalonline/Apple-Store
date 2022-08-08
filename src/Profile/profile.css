@@ -1,0 +1,68 @@
+.profilecontainer {
+    margin-top: 5%;
+    /* border: 1px solid black; */
+    /* box-shadow: 5px 5px 0px black; */
+    height: 550px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 11px black;
+}
+
+.profile-title {
+    margin-top: 15px;
+    text-align: center;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1.33341;
+    letter-spacing: .020em;
+}
+
+.user-titles {
+    color: #666;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.42861;
+    box-sizing: border-box;
+}
+
+.store-button-container {
+    width: 100%;
+    text-align: center;
+    transform: translatey(-80%);
+}
+
+
+.profile-footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(201, 201, 201);
+    height: 50px;
+    position: absolute;
+    border-top: 1px solid black;
+    box-shadow: 5px 0px 10px black;
+}
+
+.profile-footer div {
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 1em;
+    text-align: center;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    /* text-shadow: 1px 1px 2px red, 0 0 0.02em blue, 0 0 0.01em blue; */
+    cursor: no-drop;
+}
+
+.profile-footer div a{
+    color: rgb(45, 92, 232);
+    letter-spacing: .050em;
+    font-size: 15px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.profile-footer div a:hover{
+    color: rgb(40, 0, 237);
+    letter-spacing: .050em;
+    font-size: 15px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
