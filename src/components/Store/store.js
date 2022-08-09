@@ -3,12 +3,20 @@ import axios from 'axios';
 import './store.css';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import { useNavigate } from "react-router-dom";
 
 
 
 function Store() {
     const [products, setProducts] = useState([]);
     const { loggedIn } = useAuth();
+    const navigate = useNavigate();
+
+    // navigate("/profile", { replace: true });
+
+    const signinClick = () => {
+        navigate("/Signin", { replace: true });
+    }
 
     // const URL = "http://localhost:3334/api/products";
     const URL = `${process.env.REACT_APP_APPLE_API}api/products`;
@@ -48,25 +56,30 @@ function Store() {
 
                                         </div>
                                         <div className="card-text cardp col-8">Başlangıç fiyatı: {item.price} TL</div>
+                                        {/* <Link to={`/Signin`} >  */}
                                         {
                                             !loggedIn && (
+
                                                 <button
-                                                className='btn btn-primary buybutton col-4'
-                                                onClick={() => { }}
-                                            >
-                                                Oturum açın
-                                            </button>
+                                                    className='btn btn-primary buybutton col-5 mt-1 '
+                                                    onClick={signinClick}
+                                                >
+                                                    Oturum açın
+                                                </button>
+
                                             )
                                         }
+                                         {/* </Link>  */}
+
                                         {/* <Link to={`/Store/${item.id}`} > */}
                                         {
                                             loggedIn && (
                                                 <button
-                                                className='btn btn-primary buybutton col-4'
-                                                onClick={() => { }}
-                                            >
-                                                Sepetim
-                                            </button>
+                                                    className='btn btn-primary buybutton col-4'
+                                                    onClick={() => { }}
+                                                >
+                                                    Sepetim
+                                                </button>
                                             )
                                         }
                                         {/* </Link> */}

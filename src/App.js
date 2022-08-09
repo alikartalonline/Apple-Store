@@ -9,6 +9,7 @@ import ErrorPage from './components/ErrorPage/errorpage.js';
 import Profile from './components/Profile/profile';
 import ProtectedRoute from './components/ProtectedRoute.js/protectedRoute';
 import SignIn from './components/Signin/signin';
+import Basket from './components/Basket/basket';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/Account" element={<Account />} />
         <Route path="/Signin" element={<SignIn />} />
-        <Route path="/Store/:id" element={<StoreDetail />} />
         <Route path="/Store" element={<Store />} />
+        <Route path="/Store/:id" element={<StoreDetail />} />
+        <Route path="/Basket" element={<Basket />} />
         <Route path="/*" element={<ErrorPage />} />
 
         <Route path="/profile"

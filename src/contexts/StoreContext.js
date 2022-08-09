@@ -19,7 +19,6 @@ const StoreProvider = ({ children }) => {
     // (data) parametresi hangi ürün eklenecekse o ürün demek.
     // önceki değerleri (prev) alıp yeni data'yı ekleyerek yeni değerleri set ediyoruz
     const addToBasket = (data, findBasketItem) => {
-        // parametre olarak sepete atacağımız api datamız
 
         if (!findBasketItem) { // findBasketItem bize false geliyor ise
             return setItems((items) => [data, ...items]);
@@ -31,11 +30,19 @@ const StoreProvider = ({ children }) => {
         setItems(filtered);
     };
 
+    const removeFromBasket = (item_id) => {
+        const filtered = items.filter((item) => item.id !== item_id)
+        setItems(filtered)
+    }
+    // bize parametre olarak veirlen (item_id) haricinde olanları setItems(filtered) ile sepetimize güncellemiş olacak bu işlem.
+    // bu bölüm (removeFromBasket); sepete eklenen ürünleri, sepet(basket) içerisinde "remove from basket" butonu ile silmek için
+
 
     const values = {
         items,
         setItems,
-        addToBasket
+        addToBasket,
+        removeFromBasket
     };
 
 

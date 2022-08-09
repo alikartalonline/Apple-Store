@@ -125,19 +125,24 @@ function Header() {
                                     {
                                         loggedIn && (
                                             <li>
-                                                <p className="dropdown-item "
-                                                    style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
-                                                >
-                                                    {
-                                                        items.length < 0 ? "" : (
-                                                            <button
-                                                                className='btn btn-primary'
-                                                            >
-                                                                Sepetinizde {items.length} adet ürün bulunmaktadır
-                                                            </button>
-                                                        )
-                                                    }
-                                                </p>
+                                                {
+                                                    items.length == 0 && (
+                                                        <p className="dropdown-item "
+                                                            style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
+                                                        >
+                                                            "Sepetinizde ürün bulunmamaktadır"
+                                                        </p>
+                                                    )
+                                                }
+                                                {
+                                                    items.length > 0 && (
+                                                        <p className="dropdown-item "
+                                                            style={{ padding: "15px", fontSize: "15px", textAlign: "center" }}
+                                                        >
+                                                            "Sepetinizde {items.length} adet ürün bulunmaktadır"
+                                                        </p>
+                                                    )
+                                                }
                                             </li>
                                         )
                                     }
@@ -197,12 +202,12 @@ function Header() {
                                         loggedIn && (
                                             <>
                                                 <li>
-                                                    <Link to='/Profile'>
+                                                    <Link to='/Basket'>
                                                         <a className="dropdown-item" href="#">
                                                             <img
                                                                 style={{ marginRight: "10px" }}
                                                                 src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Profil Hesabim" />
-                                                            Hesap
+                                                            Sepetim ({items.length})
                                                         </a>
                                                     </Link>
                                                 </li>
