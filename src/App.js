@@ -4,6 +4,7 @@ import Header from './components/Header/header';
 import HomePage from './components/HomePage/homepage';
 import Account from './components/Account/account.js';
 import Store from './components/Store/store';
+import StoreDetail from './components/StoreDetail/storeDetail';
 import ErrorPage from './components/ErrorPage/errorpage.js';
 import Profile from './components/Profile/profile';
 import ProtectedRoute from './components/ProtectedRoute.js/protectedRoute';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/Account" element={<Account />} />
         <Route path="/Signin" element={<SignIn />} />
+        <Route path="/Store/:id" element={<StoreDetail />} />
         <Route path="/Store" element={<Store />} />
         <Route path="/*" element={<ErrorPage />} />
 

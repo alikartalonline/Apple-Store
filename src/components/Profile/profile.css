@@ -6,6 +6,7 @@
     border-radius: 30px;
     border: 1px solid transparent;
     box-shadow: 5px 5px 11px black;
+    box-sizing: border-box;
 }
 
 .profile-title {

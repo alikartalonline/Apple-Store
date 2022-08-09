@@ -184,7 +184,6 @@ nav {
     background: #fff;
 }
 
-
 .dropdown {
     text-decoration: none;
     text-overflow: hidden;
@@ -203,6 +202,7 @@ nav {
 .dropdown ul li {
     margin-bottom: -3px;
 }
+
 
 .dropdown-menu li p:hover {
     background-color: transparent;

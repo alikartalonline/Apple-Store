@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-.cards1{
-    z-index: -1;
+.cards1 {
+    /* z-index: -1; */
     height: 500px;
     white-space: nowrap;
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: #fff;
+    /* background-color: transparent; */
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -19,10 +20,10 @@
     border-color: transparent;
     white-space: normal;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-    transition: all .3s cubic-bezier(0,0,.5,1);
+    transition: all .3s cubic-bezier(0, 0, .5, 1);
 }
 
-.Title{
+.Title {
     padding-top: 30px;
     padding-bottom: 16px;
     box-sizing: border-box;
@@ -33,30 +34,27 @@
     line-height: 1.14286;
     font-weight: 600;
     letter-spacing: .007em;
-    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #1d1d1f;
     margin: 0 0 9px;
     padding-top: 24px;
 }
 
-.cardImg{
-    /* margin-left: 20%; */
-}
 
-.buybutton{
-/* float: right; */
-/* text-align: center; */
-/* display: inline-block; */
-    white-space: nowrap;
-    cursor: pointer;
-    white-space: nowrap;
+
+.buybutton {
+    /* float: right; */
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* cursor: pointer; */
+    /* white-space: nowrap; */
     font-size: 17px;
+    /* min-width: auto; */
     line-height: 1.17648;
     font-weight: 400;
     letter-spacing: -.022em;
-    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     min-width: 28px;
-    /* min-width: auto; */
     height: fit-content;
     width: fit-content;
     padding: 8px 16px;
@@ -67,13 +65,13 @@
     --sk-button-margin-vertical: 14px;
 }
 
-.cardp{
+.cardp {
     margin-top: 20px;
     font-size: 14px;
     line-height: 1.28577;
     font-weight: 400;
     letter-spacing: -.016em;
-    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #1d1d1f;
     white-space: normal;
 }

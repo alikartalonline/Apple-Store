@@ -3,13 +3,16 @@ import './header.css';
 import { Link } from "react-router-dom";
 
 import { useAuth } from '../../contexts/AuthContext';
+import { useStore } from '../../contexts/StoreContext';
 
 function Header() {
+
     const { loggedIn, user } = useAuth();
+    const { items } = useStore();
 
     console.log("loggedIn :", loggedIn)
     return (
-        <nav className=''>
+        <nav>
             <div className='container'>
                 <div className='row' >
 
@@ -104,17 +107,42 @@ function Header() {
                                 </a>
 
                                 <ul
-                                    className="dropdown-menu"
+                                    className="dropdown-menu "
                                     aria-labelledby="dropdownMenuLink"
                                 >
+                                    {
+                                        !loggedIn && (
+                                            <li>
+                                                <p className="dropdown-item "
+                                                    style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
+                                                >
+                                                    Alışveriş çantanız boş.
+                                                </p>
+                                            </li>
+                                        )}
 
-                                    <li>
-                                        <p className="dropdown-item "
-                                            style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
-                                        >
-                                            Alışveriş çantanız boş.
-                                        </p>
-                                    </li>
+
+                                    {
+                                        loggedIn && (
+                                            <li>
+                                                <p className="dropdown-item "
+                                                    style={{ padding: "20px", fontSize: "15px", textAlign: "center" }}
+                                                >
+                                                    {
+                                                        items.length < 0 ? "" : (
+                                                            <button
+                                                                className='btn btn-primary'
+                                                            >
+                                                                Sepetinizde {items.length} adet ürün bulunmaktadır
+                                                            </button>
+                                                        )
+                                                    }
+                                                </p>
+                                            </li>
+                                        )
+                                    }
+
+
 
                                     <li><hr className="dropdown-divider" /></li>
 
@@ -154,11 +182,11 @@ function Header() {
                                                 <li>
                                                     <Link to='/Account'>
                                                         <a className="dropdown-item" href="#">
-                                                        <img
-                                                            style={{ marginRight: "10px" }}
-                                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Kayıt olun" />
-                                                        Kayıt olun
-                                                    </a>
+                                                            <img
+                                                                style={{ marginRight: "10px" }}
+                                                                src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Kayıt olun" />
+                                                            Kayıt olun
+                                                        </a>
                                                     </Link>
                                                 </li>
                                             </>
@@ -171,11 +199,11 @@ function Header() {
                                                 <li>
                                                     <Link to='/Profile'>
                                                         <a className="dropdown-item" href="#">
-                                                        <img
-                                                            style={{ marginRight: "10px" }}
-                                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Profil Hesabim" />
-                                                        Hesap
-                                                    </a>
+                                                            <img
+                                                                style={{ marginRight: "10px" }}
+                                                                src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/account.svg" height="20" alt="Profil Hesabim" />
+                                                            Hesap
+                                                        </a>
                                                     </Link>
                                                 </li>
                                             </>
@@ -186,40 +214,40 @@ function Header() {
 
                                     {
                                         !loggedIn && (
-                                    <li >
-                                    <Link to='/Signin'>
-                                        <a
-                                            className="dropdown-item"
-                                            href="#"
-                                        >
-                                            <img
-                                                style={{ marginRight: "10px" }}
-                                                src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
-                                            Oturum açın
-                                        </a>
-                                        </Link>
-                                    </li>
-                                   )
-                                   }
+                                            <li >
+                                                <Link to='/Signin'>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        <img
+                                                            style={{ marginRight: "10px" }}
+                                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
+                                                        Oturum açın
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                        )
+                                    }
 
 
                                     {
-                                    loggedIn && (
-                                    <li >
-                                    <Link to='/Profile'>
-                                        <a
-                                            className="dropdown-item"
-                                            href="#"
-                                        >
-                                            <img
-                                                style={{ marginRight: "10px" }}
-                                                src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
-                                            Hoş geldin "{user.name}"
-                                        </a>
-                                        </Link>
-                                    </li>
-                                   )
-                                   }
+                                        loggedIn && (
+                                            <li >
+                                                <Link to='/Profile'>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        <img
+                                                            style={{ marginRight: "10px" }}
+                                                            src="https://www.apple.com/ac/globalnav/7/tr_TR/assets/ac-store/signIn.svg" height="20" alt="" />
+                                                        Hoş geldin "{user.name}"
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                        )
+                                    }
 
 
 

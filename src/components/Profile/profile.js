@@ -23,7 +23,7 @@ function Profile() {
                 <div className='row '>
 
                     {/* Profile Start */}
-                    <div className='profilecontainer'>
+                    <div className='profilecontainer col-12'>
                         <h2 className='profile-title mt-4'>Profil Bilgileri</h2>
 
                         <div className='mt-5 d-flex'>
