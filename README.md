@@ -73,4 +73,9 @@
 
 ![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working5.gif)
 
+<br>
+
+### Stage - 10: "Profile - Store (update) - Product Detail"
+
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/working6.gif)
 

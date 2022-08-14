@@ -36,7 +36,7 @@ function StoreDetail() {
 
         setTimeout(() => {
             document.getElementById('liveToast').classList.remove('show')
-        }, 5000)
+        }, 4000)
     }
 
 
