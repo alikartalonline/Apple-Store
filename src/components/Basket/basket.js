@@ -6,8 +6,14 @@ function Basket() {
 
     const { items, removeFromBasket } = useStore();
 
+
     const getPrice = items.map((x) => x.price)
-    const total = getPrice.reduce((a, b) => Number(a) + Number(b));
+    // const total = getPrice.reduce((a, b) => Number(a) + Number(b));
+
+
+    function totalPrice() {
+        return getPrice.reduce((a, b) => Number(a) + Number(b));
+    }
 
     return (
         <div>
@@ -18,16 +24,26 @@ function Basket() {
                     {
                         // sepette ürün yok ise hata mesajı versin
                         items.length < 1 && (
-                        <div style={{textAlign:"center"}}> You have not any items in your basket...</div>)
+                            <>
+                                <div className='col-8 mt-5 fs-3 text-primary text-opacity-50 ' > You have not any items in your basket !</div>
+
+
+                                <div className='col-4 total-price'  >
+                                    Toplam Fiyat: 0 TL
+                                </div>
+                            </>
+                        )
                     }
+
 
                     {
                         items.length > 0 &&
-                        <div className='col-8'>
+                        <>
+                            <div className='col-8'>
                                 {
                                     items.map((item, key) => (
 
-                                       <div className=''>
+                                        <div className=''>
                                             <div className='basket-item' key={item.id}>
                                                 <h4>{item.name}</h4>
                                                 <div className="d-flex">
@@ -45,12 +61,16 @@ function Basket() {
                                         </div>
                                     ))
                                 }
-                        </div>
+
+                            </div>
+
+                            <div className='col-4 total-price'  >
+                                Toplam Fiyat: {totalPrice()} TL
+                            </div>
+
+                        </>
                     }
 
-                    <div className='col-4 total-price'  >
-                            Toplam Fiyat: {total} TL
-                    </div>
 
                 </div>
             </div>
