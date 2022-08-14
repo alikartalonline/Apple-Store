@@ -75,3 +75,106 @@
     color: #1d1d1f;
     white-space: normal;
 }
+
+.Store-Title-1{
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline;
+    
+}
+
+.Store-Title-2{
+    font-size: 45px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline;
+    color: #6e6e73;
+}
+
+.store-title-container{
+    margin-top: 7%;
+    /* text-align: left; */
+    white-space: nowrap;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin-bottom: 20px; */
+}
+
+.st-container-right-h4{
+    font-size: 14px;
+    line-height: 1.42859;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+.st-container-right-h4 a{
+    background: transparent;
+    border: 0;
+    /* letter-spacing: .016em; */
+    letter-spacing: inherit;
+    color: #06c;
+    font-size: inherit;
+    line-height: inherit;
+    /* font-weight: inherit; */
+    padding: 0;
+    vertical-align: inherit;
+    cursor: pointer;
+}
+.st-container-right-h4 a:hover{
+    color: #0071e3;
+    text-decoration: underline;
+}
+
+.header-title-icons li{
+    /* display: inline-block; */
+    margin-top: 7%;
+    margin-right: 50px;
+}
+
+.header-title-a{
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 500;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: block;
+    color: #1d1d1f;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.products-titles-1{
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.products-titles-span{
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline;
+    color: #86868c;
+}
+
+
+
+
+
