@@ -2,61 +2,61 @@
     {
         "id": 1,
         "name": "M1 çipli MacBook Air",
-        "price": "20.999",
+        "price": "20.999,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-macbook-air-202206?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1653499620093"
     },
     {
         "id": 2,
         "name": "M2 çipli MacBook Air",
-        "price": "25.999",
+        "price": "25.999,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-macbook-air-202110?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1633726242000"
     },
     {
         "id": 3,
         "name": "13 inç MacBook Pro",
-        "price": "27.999",
+        "price": "27.999,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-macbook-pro-13-202206?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1653498040306"
     },
     {
         "id": 4,
         "name": "14 inç ve 16 inç MacBook Pro",
-        "price": "41.999",
+        "price": "41.999,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-macbook-pro-14-16-202206?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1653498040386"
     },
     {
         "id": 5,
         "name": "24 inç iMac",
-        "price": "26.999",
+        "price": "26.999,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-imac-24-202108?wid=980&hei=1000&fmt=jpeg&qlt=95&.v=1625868688000"
     },
     {
         "id": 6,
         "name": "Mac mini",
-        "price": "14.199",
+        "price": "14.199,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-mac-mini-202108?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1626106830000"
     },
     {
         "id": 7,
         "name": "Mac Studio",
-        "price": "42.999",
+        "price": "42.999,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-mac-studio-202203?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1645558306355"
     },
     {
         "id": 8,
         "name": "Studio Display",
-        "price": "33.599",
+        "price": "33.599,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-studio-display-202203?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1645558306366"
     },
     {
         "id": 9,
         "name": "Mac Pro",
-        "price": "105.999",
+        "price": "105.999,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-mac-pro-202108?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1625864628000"
     },
     {
         "id": 10,
         "name": "Pro Display XDR",
-        "price": "78.859",
+        "price": "78.859,00",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-mac-pro-display-202108?wid=800&hei=1000&fmt=jpeg&qlt=95&.v=1625864626000"
     }
 ]
