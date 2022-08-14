@@ -10,6 +10,8 @@ import Footer from '../Footer/footer';
 function Store() {
 
     const [products, setProducts] = useState([]);
+    const [search, setSearch] = useState("")
+
     const { loggedIn } = useAuth();
     const navigate = useNavigate();
 
@@ -31,6 +33,30 @@ function Store() {
                 console.log("error", err);
             })
     }, [])
+
+    // Search Form
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    }
+
+    // Search Input
+    const searchProduct = (event) => {
+        setSearch(event.target.value)
+    }
+    // console.log("search", search)
+
+    // Search Filtered and Sort (map)
+    let filteredProducts = products.filter(
+        (item) => {
+            return item.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
+        }
+    ).sort((a, b) => {
+        return a.id - b.id;
+
+        // Tersine sıralamak istersem aşağıdaki iki kod da aynı kapıya çıkıyor: 
+        // return a.id < b.id ? 1 : a.id > b.id ? -1 : 0; 
+        // return b.id - a.id; 
+    });
 
     return (
         <div className='store'>
@@ -70,7 +96,7 @@ function Store() {
 
                             <div className='col d-flex mt-3'>
                                 <div>
-                                    <svg viewBox="0 0 35 35" class="as-svgicon as-svgicon-applestore as-svgicon-base as-svgicon-applestorebase" role="img" aria-hidden="true" width="35px" height="35px"><path fill="none" d="M0 0h35v35H0z"></path><path d="M17.5 32.217a1.136 1.136 0 01-1-.576l-1.812-2.525c-.053-.087-.1-.116-.156-.116H10.5A4.5 4.5 0 016 24.5V10.518a4.5 4.5 0 014.5-4.5h14a4.5 4.5 0 014.5 4.5V24.5a4.5 4.5 0 01-4.5 4.5h-4.036a.149.149 0 00-.129.074l-1.867 2.609a1.108 1.108 0 01-.968.534zM10.5 7A3.519 3.519 0 007 10.518V24.5a3.5 3.5 0 003.5 3.5h4.036a1.151 1.151 0 011 .576l1.808 2.524c.128.213.211.17.284.042l1.868-2.61a1.125 1.125 0 01.968-.532H24.5a3.5 3.5 0 003.5-3.5V10.518A3.519 3.519 0 0024.5 7z"></path><path d="M21.35 14.635a2.326 2.326 0 00-1.078 1.94 2.215 2.215 0 001.353 2.051 4.733 4.733 0 01-.693 1.444c-.429.617-.9 1.246-1.584 1.246s-.858-.408-1.661-.408c-.77 0-1.045.419-1.672.419s-1.078-.573-1.584-1.29a6.312 6.312 0 01-1.056-3.363 2.719 2.719 0 012.541-3.021c.682 0 1.232.441 1.65.441s1.023-.463 1.782-.463a2.348 2.348 0 012.002 1.004zm-3.729-1.114c-.055 0-.1-.011-.143-.011 0-.033-.011-.11-.011-.187a2.26 2.26 0 01.561-1.378 2.19 2.19 0 011.485-.772 1.074 1.074 0 01.011.2A2.329 2.329 0 0119 12.794a1.967 1.967 0 01-1.379.727z"></path></svg>
+                                    <svg viewBox="0 0 35 35" className="as-svgicon as-svgicon-applestore as-svgicon-base as-svgicon-applestorebase" role="img" aria-hidden="true" width="35px" height="35px"><path fill="none" d="M0 0h35v35H0z"></path><path d="M17.5 32.217a1.136 1.136 0 01-1-.576l-1.812-2.525c-.053-.087-.1-.116-.156-.116H10.5A4.5 4.5 0 016 24.5V10.518a4.5 4.5 0 014.5-4.5h14a4.5 4.5 0 014.5 4.5V24.5a4.5 4.5 0 01-4.5 4.5h-4.036a.149.149 0 00-.129.074l-1.867 2.609a1.108 1.108 0 01-.968.534zM10.5 7A3.519 3.519 0 007 10.518V24.5a3.5 3.5 0 003.5 3.5h4.036a1.151 1.151 0 011 .576l1.808 2.524c.128.213.211.17.284.042l1.868-2.61a1.125 1.125 0 01.968-.532H24.5a3.5 3.5 0 003.5-3.5V10.518A3.519 3.519 0 0024.5 7z"></path><path d="M21.35 14.635a2.326 2.326 0 00-1.078 1.94 2.215 2.215 0 001.353 2.051 4.733 4.733 0 01-.693 1.444c-.429.617-.9 1.246-1.584 1.246s-.858-.408-1.661-.408c-.77 0-1.045.419-1.672.419s-1.078-.573-1.584-1.29a6.312 6.312 0 01-1.056-3.363 2.719 2.719 0 012.541-3.021c.682 0 1.232.441 1.65.441s1.023-.463 1.782-.463a2.348 2.348 0 012.002 1.004zm-3.729-1.114c-.055 0-.1-.011-.143-.011 0-.033-.011-.11-.011-.187a2.26 2.26 0 01.561-1.378 2.19 2.19 0 011.485-.772 1.074 1.074 0 01.011.2A2.329 2.329 0 0119 12.794a1.967 1.967 0 01-1.379.727z"></path></svg>
                                 </div>
 
                                 <div className='st-container-right-h4 ms-2'>
@@ -96,7 +122,7 @@ function Store() {
                                     width="100"
                                     height="70"
                                     alt=""
-                                    src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=200&amp;hei=130&amp;fmt=png-alpha&amp;.v=1645051958490" srcset="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=200&amp;hei=130&amp;fmt=png-alpha&amp;.v=1645051958490, https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=400&amp;hei=260&amp;fmt=png-alpha&amp;.v=1645051958490 2x" />
+                                    src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=200&amp;hei=130&amp;fmt=png-alpha&amp;.v=1645051958490" srcSet="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=200&amp;hei=130&amp;fmt=png-alpha&amp;.v=1645051958490, https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=400&amp;hei=260&amp;fmt=png-alpha&amp;.v=1645051958490 2x" />
                                 <div style={{ textAlign: "center", marginTop: "10px" }}>
                                     <a href="#" className='header-title-a'>Mac</a>
                                 </div>
@@ -204,15 +230,39 @@ function Store() {
 
                 <div className='row'>
 
-                    <div className='col-12 ms-3 mt-3' style={{ textAlign: "left" }}>
-                        <h2 className='products-titles-1'>Son çıkanlar.</h2>
-                        <span className='products-titles-span'>Yeniliklere göz atın.</span>
+                    <div className='row ms-3 mt-3' style={{ textAlign: "left" }}>
+                        
+                        <div className='col-9'>
+                            <h2 className='products-titles-1'>Son çıkanlar.</h2>
+                            <span className='products-titles-span'>Yeniliklere göz atın.</span>
+                        </div>
+
+                        <div className='col-3'>
+                            <form onSubmit={handleSubmit}>
+                                <div className="col-12 input-group">
+                                    <img 
+                                    src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg" 
+                                    height={30}
+                                    alt="searchIcon" 
+                                    className='me-2 mt-2'
+                                    />
+                                    <input
+                                        onChange={searchProduct}
+                                        type="text"
+                                        className="form-control"
+                                        style={{ borderRadius: "30px" }}
+                                        placeholder='Search . . . '
+                                    />
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
 
 
 
                     {
-                        products.map((item, index) => (
+                        filteredProducts.map((item, index) => (
 
                             <div className='mt-4 col-4 d-flex' key={index}>
 
