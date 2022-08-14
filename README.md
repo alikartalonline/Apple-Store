@@ -1,9 +1,8 @@
 # Apple Store
 
-## Before Start:
+<br>
 
-![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/start.gif)
-
+#### Before Start:
 
 ```
 open a new terminal: Run The Server!
@@ -18,6 +17,8 @@ open a new terminal again: Run React!
 npm start
 
 ```
+
+![workworkwork](https://github.com/alikartalonline/Apple-Store/blob/main/assets/start.gif)
 
 
 <br>
