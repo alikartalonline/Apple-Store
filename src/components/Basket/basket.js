@@ -1,15 +1,13 @@
 import React from 'react'
 import { useStore } from '../../contexts/StoreContext';
-import { Link } from 'react-router-dom';
 import './basket.css';
 
 function Basket() {
 
     const { items, removeFromBasket } = useStore();
 
-    const total = items.reduce((acc, obj) => acc + obj.price, 0);
-    // acc = o ana kadar ki toplanmış değer
-    // acc'ye obj'nin price'ını ekliyorum ve bunun 0'dan başlaması gerektiğini söylüyorum
+    const getPrice = items.map((x) => x.price)
+    const total = getPrice.reduce((a, b) => Number(a) + Number(b));
 
     return (
         <div>
@@ -21,16 +19,20 @@ function Basket() {
             {
                 items.length > 0 &&
                 <>
-                    <ul style={{ listStyleType: "decimal" }}>
+                    <ul className='ms-5 '>
                         {
                             items.map((item) => (
 
-                                <li key={item.id} style={{ marginBottom: 20 }}>
+                                <li
+                                    key={item.id}
+                                    style={{ marginBottom: 20 }}
+                                    className="mt-5 mb-5"
+                                >
 
 
-                                    <div fontSize={18}>{item.name}</div>
-                                    <div fontSize={18}>{item.price}</div>
-                                    <img src={item.image} alt="" />
+                                    <h4>{item.name}</h4>
+                                    <img src={item.image} height="100" alt="" className='d-flex' />
+                                    <div style={{fontSize:"20px", textAlign:"center"}}>{item.price}</div>
 
 
                                     <button
