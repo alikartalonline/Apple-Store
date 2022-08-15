@@ -16,6 +16,7 @@ function StoreDetail() {
     const { addToBasket, items } = useStore();
 
     const URL = `${process.env.REACT_APP_APPLE_API}api/product`;
+    // const URL = "http://localhost:3334/api/product"
 
     useEffect(() => {
         axios.get(`${URL}/${id}`)

@@ -24,6 +24,7 @@ function Store() {
     }
 
     const URL = `${process.env.REACT_APP_APPLE_API}api/products`;
+    // const URL = "http://localhost:3334/api/products"
 
     useEffect(() => {
         axios.get(URL)

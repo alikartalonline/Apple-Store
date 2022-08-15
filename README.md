@@ -39,6 +39,8 @@ npm start
 
 * Kayıtlar **LocalStorage**'de tutulduğu için, kayıt olduktan sonra oturum kapatıp, tekrar giriş yapabilmek için **`F5`** ile sayfayı yenilemeniz gerekmektedir.
 
+* Projeyi çalıştırırken ***env*** ile ilgili hata alıyorsanız, **"Store"** componentine gidip **`URL`**'yi şu kod ile değiştirin `const URL = "http://localhost:3334/api/products"` ve daha sonra **"Store Detail"** componentine gidin ve oradaki **`URL`**'yi ise şu kod ile değiştirin `const URL = "http://localhost:3334/api/product"`
+
 
 <br>
 <hr>
