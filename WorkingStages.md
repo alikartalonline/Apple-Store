@@ -1,7 +1,6 @@
 # Apple Store
 
 <br>
-<hr>
 <br>
 
 ## Working Stages 🏗️ 🚧 
